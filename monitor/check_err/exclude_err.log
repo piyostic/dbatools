@@ -1,0 +1,25 @@
+[Note] Error reading relay log event: slave SQL thread was killed
+[Note] Slave SQL thread initialized, starting replication
+[Note] Slave SQL thread exiting, replication stopped
+[Warning] Slave SQL: If a crash happens this configuration does not guarantee that the relay log info will be consistent
+[Warning] Aborted connection
+No data - zero rows fetched, selected, or processed
+[ERROR] Event Scheduler: [root@localhost][lol_store.purge_cake_sessions] The MySQL server is running with the --read-only option so it cannot execute this statement
+[Note] Event Scheduler: [root@localhost].[lol_store.purge_cake_sessions] event execution failed.
+Slave SQL thread ignored the query because of replicate-*-
+[Warning] Access denied for user 'nagios'@'10.100.30.20' (using password: NO)
+[Warning] Access denied for user 'cactimonitor'@'10.100.30.84' (using password: NO)
+was not purged because it was being readby thread number
+[Note] Start binlog_dump to slave_server
+[Warning] Storing MySQL user name or password information in the master info repository is not secure and is therefore not recommended. Please consider using the USER and PASSWORD connection options for START SLAVE; see the 'START SLAVE Syntax' in the MySQL Manual for more information
+[Warning] Slave I/O: Notifying master by SET @master_binlog_checksum= @@global.binlog_checksum failed with error: Unknown system variable 'binlog_checksum', Error_code: 1193
+[Warning] Slave I/O: Unknown system variable 'SERVER_UUID' on master. A probable cause is that the variable is not supported on the master (version: 5.5.9-log), even though it is on the slave (version: 5.6.19-67.0-log), Error_code: 1193
+InnoDB: Failed to set O_DIRECT on file
+InnoDB: O_DIRECT is known to result in 'Invalid argument' on Linux on tmpfs
+[Note] Slave I/O thread killed while reading event
+[Note] Slave I/O thread exiting, read up to log
+[Note] Slave I/O thread: connected to master
+[ERROR] Error reading packet from server: Lost connection to MySQL server during query ( server_errno=2013)
+[Note] Multi-threaded slave
+[Note] Coordinator
+dbadmin.blacklist_user_scan_evt
