@@ -1,0 +1,48 @@
+<html>
+  <head>
+  <script type=text/javascript src=https://www.google.com/jsapi></script>
+  <script>
+    google.load('visualization', '1', { 'packages': ['map'] });
+    google.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Location');
+      data.addColumn('string', 'Description');
+      data.addColumn('string', 'Marker')
+
+      data.addRows([
+<CHANGE>
+        ]);
+var url = 'http://icons.iconarchive.com/icons/icons-land/vista-map-markers/48/';
+var options = {
+	tooltip: { isHtml: true },
+        showTip: true,
+        useMapTypeControl: true,
+        icons: {
+          blue: {
+            normal:   url + 'Map-Marker-Marker-Outside-Azure-icon.png',
+            selected: url + 'Map-Marker-Marker-Inside-Azure-icon.png'
+          },
+          green: {
+            normal:   url + 'Map-Marker-Marker-Outside-Chartreuse-icon.png',
+            selected: url + 'Map-Marker-Marker-Inside-Azure-icon.png'
+          },
+          pink: {
+            normal:   url + 'Map-Marker-Marker-Outside-Pink-icon.png',
+            selected: url + 'Map-Marker-Marker-Inside-Azure-icon.png'
+          }
+	} 
+};
+
+    var map = new google.visualization.Map(document.getElementById('chart_div'));
+
+    map.draw(data, options);
+  };
+  </script>
+  </head>
+  <body>
+    <div id=chart_div></div>
+  </body>
+</html>
+
